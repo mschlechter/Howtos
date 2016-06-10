@@ -27,7 +27,7 @@ a bare repository:
 This will create an empty repository which will be used for sharing. "--bare"
 means this is NOT a client Git repository.
 
-## Create a workingrepository (on the workstation)
+## Create a working repository (on the workstation)
 
 On the workstation, create a project folder for your test project and create a README.md
 file:
