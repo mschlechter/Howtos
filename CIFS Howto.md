@@ -32,10 +32,13 @@ Step 5: Create an entry in /etc/fstab
 
 Add the following line to /etc/fstab:
 
-    //192.168.2.110/backup  /mnt/backup cifs    credentials=/etc/cifs_credentials   0   0
+    //192.168.2.110/backup  /mnt/backup cifs    noauto,credentials=/etc/cifs_credentials   0   0
 
 You can now easily mount your CIFS share using the mount point:
 
     sudo mount /mnt/backup
+
+I have added the noauto option to prevent Linux from automatically mounting the
+Windows share. The share should only be mounted when needed.
 
 That's all :-)
