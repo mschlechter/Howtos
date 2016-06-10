@@ -12,7 +12,7 @@ In the rest of this document I'll use the following example names:
 - "workstation" the user's workstation
 - "server" the server (which also has a "marc" user account)
 
-## Create a bare repository
+## Create a bare repository (on the server)
 
 Create a new directory on the server to host your Git repositories. I'll use
 /home/marc/repo as an example.
@@ -27,9 +27,9 @@ a bare repository:
 This will create an empty repository which will be used for sharing. "--bare"
 means this is NOT a client Git repository.
 
-## Create a client repository
+## Create a workingrepository (on the workstation)
 
-On the client, create a project folder for your test project and create a README.md
+On the workstation, create a project folder for your test project and create a README.md
 file:
 
     mkdir /home/marc/projects/TestProject
@@ -53,12 +53,12 @@ can commit it:
 
     git commit -m "added readme"
 
-Our client repository is now in sync.
+Our workstation repository is now uptodate.
 
 ## Adding a remote and pushing changes to it
 
-If we want to sync our client repository with the one on the server, we need to add a remote
-on the workstation:
+If we want to sync our workstation repository with the one on the server, we need to add
+a remote on the workstation:
 
     git remote add server marc@server:repo/TestProject.git
 
@@ -73,9 +73,9 @@ Now try to push your local changes to the server:
     git push server master
 
 It will ask your password on the server and then should proceed to push the changes to the
-server.
+server. "master" stands for the "master" branch.
 
-We can check to see it the changes made it to the server, by logging on to the server, going
+We can check to see the changes it made on the server, by logging on to the server, going
 to the TestProject.git folder and requesting a commit log:
 
     cd /home/marc/repo/TestProject.git
