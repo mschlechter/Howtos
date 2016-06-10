@@ -27,6 +27,10 @@ a bare repository:
 This will create an empty repository which will be used for sharing. "--bare"
 means this is NOT a client Git repository.
 
+## Configure Git user name and email (on the workstation)
+
+todo
+
 ## Create a working repository (on the workstation)
 
 On the workstation, create a project folder for your test project and create a README.md
@@ -95,5 +99,11 @@ By default, your credentials will be cached for 15 minutes.
 You can also change the timeout (in seconds):
 
     git config --global credential.helper 'cache --timeout=3600'
+
+## Gitweb configuration
+
+todo
+
+
 
 That's all :-)
