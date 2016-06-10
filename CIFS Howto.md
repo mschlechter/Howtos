@@ -36,6 +36,6 @@ Add the following line to /etc/fstab:
 
 You can now easily mount your CIFS share using the mount point:
 
-    mount /mnt/backup
+    sudo mount /mnt/backup
 
 That's all :-)
