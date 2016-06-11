@@ -29,7 +29,8 @@ means this is NOT a client Git repository.
 
 ## Configure Git user name and email (on the workstation)
 
-todo
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
 
 ## Create a working repository (on the workstation)
 
