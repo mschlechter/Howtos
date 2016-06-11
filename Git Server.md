@@ -119,5 +119,7 @@ repositories, so you don't have to specify them manually:
 
 Access your repositories on http://server/cgit
 
+## Using gitkraken
+
 
 That's all :-)
