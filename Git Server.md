@@ -100,10 +100,22 @@ You can also change the timeout (in seconds):
 
     git config --global credential.helper 'cache --timeout=3600'
 
-## Gitweb configuration
+## Installing cgit
 
-todo
+Cgit is a fast web frontend for Git. Ubuntu has a nice package for it. Install it along
+with Apache2:
 
+    sudo apt install apache2 
+    sudo apt install cgit
+
+Now you can add your reposities in /etc/cgitrc:
+
+    repo.url=testproject
+    repo.path=/home/marc/repo/TestProject.git
+    repo.desc=Test Project
+    repo.owner=Marc
+
+And access them on http://server/cgit
 
 
 That's all :-)
