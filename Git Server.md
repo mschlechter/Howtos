@@ -108,14 +108,15 @@ with Apache2:
     sudo apt install apache2 
     sudo apt install cgit
 
-Now you can add your reposities in /etc/cgitrc:
+Now you can configure /etc/cgitrc. Set the scan-path to let cgit search for all your
+repositories, so you don't have to specify them manually:
 
-    repo.url=testproject
-    repo.path=/home/marc/repo/TestProject.git
-    repo.desc=Test Project
-    repo.owner=Marc
+    css=/cgit-css/cgit.css
+    logo=/cgit-css/cgit.png
 
-And access them on http://server/cgit
+    scan-path=/home/marc/repo
+
+Access your repositories on http://server/cgit
 
 
 That's all :-)
